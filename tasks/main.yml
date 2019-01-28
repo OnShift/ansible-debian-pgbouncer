@@ -2,7 +2,7 @@
 - name: PGBouncer | Install from apt repo
   apt:
     name: pgbouncer
-    state: installed
+    state: present
 
 - name: PGBouncer | Install postgresql-client
   apt:
