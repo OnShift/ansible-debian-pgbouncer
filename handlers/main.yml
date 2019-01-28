@@ -1,2 +1,7 @@
 ---
-# handlers file for .
+
+- name: pgbouncer_reload
+  become: true
+  service:
+    name: pgbouncer
+    state: reloaded
